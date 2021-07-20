@@ -1,0 +1,5 @@
+LOCK_CHANGED=`git diff --name-only $1 $2 -- poetry.lock | wc -l`
+if [ $LOCK_CHANGED -gt 0 ];
+then
+    poetry install --remove-untracked
+fi
