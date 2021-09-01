@@ -3,3 +3,5 @@ if [ $LOCK_CHANGED -gt 0 ];
 then
     poetry install --remove-untracked
 fi
+
+# hi i would like to do some stuff here
